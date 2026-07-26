@@ -1,0 +1,90 @@
+<?php
+
+class Libro {
+
+    private $id;
+    private $titulo;
+    private $autor;
+    private $isbn;
+    private $cantidad;
+
+
+    // Constructor
+    public function __construct(
+        $titulo = null,
+        $autor = null,
+        $isbn = null,
+        $cantidad = 1
+    ) {
+
+        $this->titulo = $titulo;
+        $this->autor = $autor;
+        $this->isbn = $isbn;
+        $this->cantidad = $cantidad;
+    }
+
+
+    // =========================
+    // GETTERS
+    // =========================
+
+    public function getId() {
+
+        return $this->id;
+    }
+
+
+    public function getTitulo() {
+
+        return $this->titulo;
+    }
+
+
+    public function getAutor() {
+
+        return $this->autor;
+    }
+
+
+    public function getIsbn() {
+
+        return $this->isbn;
+    }
+
+
+    public function getCantidad() {
+
+        return $this->cantidad;
+    }
+
+
+    // =========================
+    // SETTERS
+    // =========================
+
+    public function setTitulo($titulo) {
+
+        $this->titulo = $titulo;
+    }
+
+
+    public function setAutor($autor) {
+
+        $this->autor = $autor;
+    }
+
+
+    public function setIsbn($isbn) {
+
+        $this->isbn = $isbn;
+    }
+
+
+    public function setCantidad($cantidad) {
+
+        $this->cantidad = $cantidad;
+    }
+
+}
+
+?>
